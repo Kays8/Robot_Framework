@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-14T18:55:43.999835" rpa="false" schemaversion="5">
+<suite id="s1" name="Google Search" source="K:\NPRU\2-2\AJ.Naruepon\robot_framework\google_search.robot">
+<test id="s1-t1" name="Search Google and Verify Results" line="12">
+<kw name="Open Google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:55:44.278510" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T18:55:44.278006" elapsed="2.588250"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:55:44.277503" elapsed="2.588753"/>
+</kw>
+<kw name="Input Search Term">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:55:46.867262" level="INFO">Typing text 'robot framework' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T18:55:46.866759" elapsed="0.102632"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:55:46.866759" elapsed="0.102632"/>
+</kw>
+<kw name="Press Google Search">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:55:46.970397" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg time="2024-03-14T18:55:47.301802" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-03-14T18:55:47.301802" level="INFO">Releasing special key ENTER.</msg>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-03-14T18:55:46.970397" elapsed="30.120625"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:55:46.969894" elapsed="30.121631"/>
+</kw>
+<kw name="Verify Search Results">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${SEARCH_RESULT}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-14T18:56:17.094041" elapsed="0.029173"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:56:17.146350" level="INFO">Current page contains text 'Automate'.</msg>
+<arg>${SEARCH_RESULT}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-14T18:56:17.123214" elapsed="0.023136"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:56:17.094041" elapsed="0.052309"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-14T18:56:17.146853" elapsed="2.271452"/>
+</kw>
+<doc>Test case to search Google and verify results</doc>
+<status status="PASS" start="2024-03-14T18:55:44.276496" elapsed="35.142311"/>
+</test>
+<test id="s1-t2" name="Search Google and Verify Results-2" line="20">
+<kw name="Open Google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:56:19.419813" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com'.</msg>
+<arg>https://www.google.com</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T18:56:19.419813" elapsed="2.499035"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:56:19.419311" elapsed="2.499537"/>
+</kw>
+<kw name="Input Search Term">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:56:21.919853" level="INFO">Typing text 'robot framework' into text field 'name=q'.</msg>
+<arg>name=q</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T18:56:21.919853" elapsed="0.097592"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:56:21.919351" elapsed="0.098094"/>
+</kw>
+<kw name="Press Google Search">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:56:22.018954" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg time="2024-03-14T18:56:22.295037" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-03-14T18:56:22.295540" level="INFO">Releasing special key ENTER.</msg>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-03-14T18:56:22.018451" elapsed="1.098791"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:56:22.018451" elapsed="1.098791"/>
+</kw>
+<kw name="Verify Search Results-2">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${SEARCH_RESULT2}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-14T18:56:23.118246" elapsed="0.020118"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:56:23.157478" level="INFO">Current page contains text 'ภาษาไพทอน'.</msg>
+<arg>${SEARCH_RESULT2}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-14T18:56:23.138364" elapsed="0.019114"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:56:23.117744" elapsed="0.039734"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-14T18:56:23.157981" elapsed="2.231136"/>
+</kw>
+<doc>Test case to search Google and verify results</doc>
+<status status="PASS" start="2024-03-14T18:56:19.419311" elapsed="5.970310"/>
+</test>
+<test id="s1-t3" name="Search Google and Verify Results-Yahoo" line="28">
+<kw name="Open Yahoo">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:56:25.391131" level="INFO">Opening browser 'Chrome' to base url 'https://www.yahoo.com'.</msg>
+<arg>https://www.yahoo.com</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-14T18:56:25.391131" elapsed="33.986202"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:56:25.391131" elapsed="33.986202"/>
+</kw>
+<kw name="Input Search Term Yahoo">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:56:59.378337" level="INFO">Typing text 'robot framework' into text field 'name=p'.</msg>
+<arg>name=p</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-14T18:56:59.378337" elapsed="0.115696"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:56:59.377835" elapsed="0.116198"/>
+</kw>
+<kw name="Press Yahoo Search">
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:56:59.495038" level="INFO">Sending key(s) ('ENTER',) to name=p element.</msg>
+<msg time="2024-03-14T18:56:59.782201" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-03-14T18:56:59.782703" level="INFO">Releasing special key ENTER.</msg>
+<arg>name=p</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-03-14T18:56:59.494535" elapsed="0.296216"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:56:59.494535" elapsed="0.296216"/>
+</kw>
+<kw name="Verify Search Results-Yahoo">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${SEARCH_RESULT3}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-03-14T18:56:59.792259" elapsed="0.032692"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-03-14T18:56:59.867191" level="INFO">Current page contains text 'automation'.</msg>
+<arg>${SEARCH_RESULT3}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-03-14T18:56:59.825455" elapsed="0.041736"/>
+</kw>
+<status status="PASS" start="2024-03-14T18:56:59.791756" elapsed="0.075435"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-14T18:56:59.867695" elapsed="2.303578"/>
+</kw>
+<doc>Test case to search Google and verify results</doc>
+<status status="PASS" start="2024-03-14T18:56:25.390628" elapsed="36.781148"/>
+</test>
+<status status="PASS" start="2024-03-14T18:55:44.001846" elapsed="78.170935"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Google Search">Google Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
